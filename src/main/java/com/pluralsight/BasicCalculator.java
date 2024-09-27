@@ -28,19 +28,28 @@ public class BasicCalculator {
 
         double total_number;
 
-        if(operation.equals("A") || operation.equals("a")){
+        if(operation.equals("A") || operation.equals("a")) {
+
             total_number = first_number + second_number;
             System.out.println(first_number + " + " + second_number +" = " + total_number);
-        } else if (operation.equals("S") || operation.equals("s")) {
+        }
+        else if (operation.equals("S") || operation.equals("s")) {
+
             total_number = first_number - second_number;
             System.out.println(first_number + " - " + second_number +" = " + total_number);
-        } else if (operation.equals("M") || operation.equals("m")) {
+        }
+        else if (operation.equals("M") || operation.equals("m")) {
+
             total_number = first_number * second_number;
             System.out.println(first_number + " * " + second_number +" = " + total_number);
-        }else if (operation.equals("D") || operation.equals("d")){
+        }
+        else if (operation.equals("D") || operation.equals("d")){
+
             total_number = first_number / second_number;
             System.out.println(first_number + " / " + second_number +" = " + String.format("%.2f", total_number));
-        }else {
+        }
+        else {
+            
             System.out.println("Please try again and selection a valid operation");
         }
     }
