@@ -23,8 +23,6 @@ public class BasicCalculator {
         System.out.print("Please select an option: ");
         String operation = number.nextLine();
         System.out.println();
-        //number.nextLine();
-        //System.out.println(operation);
 
         double total_number;
 
@@ -32,6 +30,8 @@ public class BasicCalculator {
 
             total_number = first_number + second_number;
             System.out.println(first_number + " + " + second_number +" = " + total_number);
+            //The following is another way of writing the previous line
+            //System.out.printf("%.2f + %.2f = %.2f", first_number, second_number, total_number);
         }
         else if (operation.equals("S") || operation.equals("s")) {
 
